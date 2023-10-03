@@ -1,0 +1,15 @@
+package TestCases;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import org.testng.annotations.Test;
+
+public class HandlingExcelsheet {
+	@Test
+	public void loginFunctionality() throws FileNotFoundException
+	{FileInputStream fs=new FileInputStream("C:\\Users\\user\\Desktop\\data.xlsx");
+	}
+	
+
+}

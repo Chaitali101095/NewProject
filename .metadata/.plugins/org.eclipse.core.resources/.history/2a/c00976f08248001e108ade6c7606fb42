@@ -1,0 +1,13 @@
+package TestCases;
+
+import org.junit.Test;
+
+public class A {
+	
+	@Test
+	public void M1()
+	{	WebDriver driver=new Chromedriver();
+	driver.get("https://login.salesforce.com/");
+	}
+
+}

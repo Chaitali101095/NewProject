@@ -1,0 +1,26 @@
+package DropDown;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class KeyBoardDropDowns {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm");
+		driver.manage().window().maximize();
+		Thread.sleep(2000);
+		
+		WebElement name=driver.findElement(By.xpath("//input[@name='firstname']"));
+		name.click();
+		name.sendKeys("Chaitali Desai");
+		
+		
+		
+
+	}
+
+}

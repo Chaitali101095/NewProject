@@ -1,0 +1,28 @@
+package DropDown;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class StaticDropDown {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+		driver.manage().window().maximize();
+		Thread.sleep(2000);
+		
+		WebElement continents=driver.findElement(By.xpath("//select[@name='continent']"));
+		//Continent.click();
+		Select s=new Select(continents);
+		s.selectByIndex(2);
+		Thread.sleep(2000);
+		s.selectByVisibleText("Antartica");
+		
+		
+	}
+
+}
+
